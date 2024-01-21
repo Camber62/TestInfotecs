@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Table with Editing Form</title>
+</head>
+<body>
+<table id="data-table">
+  <thead>
+  <tr>
+    <th onclick="sortTable('firstName')">Имя</th>
+    <th onclick="sortTable('lastName')">Фамилия</th>
+    <th onclick="sortTable('about')">Описание</th>
+    <th onclick="sortTable('eyeColor')">Цвет глаз</th>
+  </tr>
+  </thead>
+  <tbody id="table-body"></tbody>
+</table>
+
+<div id="edit-form-container">
+  <form id="edit-form">
+    <label for="editFirstName">Имя:</label>
+    <input type="text" id="editFirstName" required>
+
+    <label for="editLastName">Фамилия:</label>
+    <input type="text" id="editLastName" required>
+
+    <label for="editAbout">Описание:</label>
+    <textarea id="editAbout" rows="2" required></textarea>
+
+    <label for="editEyeColor">Цвет глаз:</label>
+    <input type="text" id="editEyeColor" required>
+
+    <button type="button" onclick="saveEdit()">Сохранить</button>
+    <button type="button" onclick="cancelEdit()">Отмена</button>
+  </form>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

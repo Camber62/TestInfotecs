@@ -1,0 +1,50 @@
+#edit-form-container {
+    position: absolute;
+    display: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+#edit-form {
+    width: 500px;
+}
+
+#edit-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#edit-form input,
+#edit-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#edit-form button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#edit-form button:hover {
+    background-color: #45a049;
+}
+#data-table {
+    border-collapse: collapse;
+    width: 50%;
+    /*margin: auto;*/
+}
+
+#data-table th, #data-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#data-table th {
+    background-color: #f2f2f2;
+}
